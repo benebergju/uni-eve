@@ -1,3 +1,6 @@
+<?php
+    include_once '../lib/block_direct_access.php';
+?>
 <head>
     <meta charset="UTF-8">
     <title><?php if (isset($header_title)) {

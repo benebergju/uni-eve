@@ -1,3 +1,6 @@
+<?php
+include_once '../lib/block_direct_access.php';
+?>
 <nav>
     <div class="wrapper flex">
         <div class="nav_left">
@@ -11,13 +14,11 @@
                 Regionen
             </a>
             <a href="/new.php">
-                Aktuelle Initiativen
+                Neuste Initiativen
             </a>
         </div>
         <div class="nav_right">
-            <form action="">
-
-            </form>
+            <a class="login_button" href="/login.php">Anmelden</a>
         </div>
     </div>
 </nav>
