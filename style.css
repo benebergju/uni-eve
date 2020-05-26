@@ -1,0 +1,128 @@
+html, body{
+    margin:0;
+    padding:0;
+    font-family: 'Cantarell', sans-serif;
+    color:#333;
+}
+body{
+    line-height: 1.1rem;
+    padding-top:64px;
+}
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    box-shadow: 0 0 5px rgba(20, 20, 20, .3);
+    background:#fff;
+    height:64px;
+}
+
+nav .nav_left{
+    flex:3;
+}
+nav .nav_right{
+    flex:2;
+    text-align: right;
+}
+nav .nav_left a{
+    display:inline-block;
+    padding: 22px 30px;
+    font-size:1.2rem;
+    color:#333;
+    text-decoration: none;
+    border-bottom:solid 3px rgba(0, 0, 0, 0);
+    transition: border-bottom-color 0.1s ease-in-out;
+}
+nav .nav_left a:hover{
+    border-bottom-color:#333;
+}
+nav .nav_left .logo{
+    color:#ff1a00;
+    font-weight: bold;
+}
+nav .nav_left .logo:hover{
+    border-bottom-color:#ff1a00;
+}
+
+nav .wrapper{
+    height:100%;
+}
+
+
+.wrapper{
+    width:85%;
+    max-width:1280px;
+    margin:0 auto;
+}
+.flex{
+    display:flex;
+}
+
+.home .hero{
+    background: url(assets/img/hero.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.home .hero_text{
+    align-self: center;
+    flex:2;
+    font-size: 4rem;
+    color:#fff;
+    text-shadow: 0 0 10px rgba(20, 20, 20, 0.5);
+    line-height: 6.4rem;
+}
+.home .hero_signup{
+
+    box-sizing: border-box;
+    width:100%;
+    flex:1;
+    background:#fff;
+    margin:40px;
+    min-height:400px;
+    padding:30px;
+}
+.home .hero_signup h2{
+    font-size:1.5rem;
+    margin-bottom: 40px;
+}
+.home input{
+    box-sizing: border-box;
+    width:100%;
+    border:solid 1px #777;
+    transition: border-color 0.1s ease-in-out;
+    padding: 15px;
+    margin:12px 0 35px 0;
+    font-size: 1.1rem;
+}
+.home input:focus{
+    border-color:#333
+}
+.home .hero_login_call{
+    text-align: left;
+    color:#888;
+    flex:1;
+    font-size: 0.8rem;
+    align-self: center;
+}
+.home .hero_submit_wrapper{
+    flex:1;
+    text-align: right;
+}
+.home .hero_submit{
+    display:inline-block;
+    width:auto;
+    background:#ff1a00;
+    border-width: 0;
+    color:#fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin:0;
+    cursor: pointer;
+}
+.home .hero_submit:hover{
+    background: #df0000;
+    transition: background-color 0.1s ease-in-out;
+}
