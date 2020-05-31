@@ -131,7 +131,8 @@ footer{
     font-size: 1.1rem;
 }
 .home .hero input:focus, .login input:focus{
-    border-color:#333
+    border-color:#ff1a00;
+    outline: none;
 }
 .home .hero_login_call, .login .register_call{
     text-align: left;

@@ -1,5 +1,5 @@
 <?php
-    include_once '../lib/block_direct_access.php';
+    require_once(dirname(__FILE__).'/../lib/block_direct_access.php');
 ?>
 <head>
     <meta charset="UTF-8">

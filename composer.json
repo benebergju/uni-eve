@@ -1,0 +1,15 @@
+{
+  "name": "vendor_name/initiative_4.0",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "AGPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Merlin Scholz",
+      "email": "merlin.scholz@tu-dortmund.de"
+    }
+  ],
+  "require": {
+    "firebase/php-jwt": "^5.2"
+  }
+}
