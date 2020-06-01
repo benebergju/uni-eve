@@ -22,7 +22,7 @@
                 color:#fff;
                 text-shadow: 0 0 10px rgba(20, 20, 20, 0.5);
                 line-height: 6.4rem;
-                margin-top:40px;
+                margin:40px 20px;
             }
             .hero_signup{
                 box-sizing: border-box;

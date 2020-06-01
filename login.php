@@ -38,8 +38,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
             $key = "ThisShouldNeverBeInProductionLikeThis"; // TODO Private Key
             $payload = array("user" => $result[0],
             );
-            $jwt = JWT::encode($payload, $key, time()+60*60*24*7);
-            setcookie("jwt", $jwt);
+            $jwt = JWT::encode($payload, $key, "HS256");
+            setcookie("jwt", $jwt, time()+60*60*24*7);
             header("Location: index.php");
             exit;
         }else {

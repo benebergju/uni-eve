@@ -27,7 +27,7 @@ nav .nav_right{
     flex:2;
     text-align: right;
 }
-nav .login_button{
+nav .login_button, nav .logout_button{
     display:inline-block;
     background:#ff1a00;
     border-width: 0;
@@ -39,7 +39,7 @@ nav .login_button{
     transition: background-color 0.1s ease-in-out;
 
 }
-nav .login_button:hover{
+nav .login_button:hover, nav .logout_button:hover{
     background: #df0000;
 }
 
@@ -80,6 +80,7 @@ footer{
 .wrapper{
     width:85%;
     max-width:1280px;
+    min-width: 860px;
     margin:0 auto;
 }
 .flex{

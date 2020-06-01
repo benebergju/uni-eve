@@ -18,7 +18,11 @@ include_once '../lib/block_direct_access.php';
             </a>
         </div>
         <div class="nav_right">
+            <?php if(isset($_COOKIE["jwt"])): ?>
+            <a class="logout_button" href="/logout.php">Abmelden</a>
+            <?php else: ?>
             <a class="login_button" href="/login.php">Anmelden</a>
+            <?php endif; ?>
         </div>
     </div>
 </nav>
