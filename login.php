@@ -133,7 +133,9 @@ $header_title = "Anmelden - Initiative 4.0";
         <div class="login_form">
             <form action="./login.php" method="POST">
                 <h2>Anmelden</h2>
-                <?php if($error=="email_invalid"):?>
+                <?php if($error=="email_required"):?>
+                    <div class="login_error">Email darf nicht leer sein</div>
+                <?php elseif($error=="email_invalid"):?>
                     <div class="login_error">Email ungültig</div>
                 <?php elseif ($error == "password_invalid"):?>
                     <div class="login_error">Passwort darf nicht leer sein</div>
@@ -149,7 +151,7 @@ $header_title = "Anmelden - Initiative 4.0";
 
                 <div class="flex">
                     <div class="register_call">
-                        Noch keinen Account? <a href="/signup.php">Jetzt registrieren</a>
+                        Noch keinen Account? <a href="/register.php">Jetzt registrieren</a>
                     </div>
                     <div class="login_submit_wrapper">
                         <input type="submit" value="Anmelden" class="login_submit">
