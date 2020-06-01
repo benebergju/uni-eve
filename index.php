@@ -1,5 +1,5 @@
 <?php
-    define("dacProtect");
+    define("dacProtect", "");
     $header_title = "Startseite - Initiative 4.0";
 ?>
 

@@ -9,25 +9,20 @@ body{
     min-height: 100vh;
 }
 main{
-    padding-top:64px;
     min-height:calc(100vh - 128px - 64px);
 }
 a{
     text-decoration: none;
     color:#ff1a00;
 }
-nav{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    box-shadow: 0 0 5px rgba(20, 20, 20, .3);
+nav{box-shadow: 0 0 5px rgba(20, 20, 20, .3);
     background:#fff;
-    height:64px;
+    min-height:64px;
 }
 
 nav .nav_left{
     flex:3;
+    overflow: hidden;
 }
 nav .nav_right{
     flex:2;
@@ -90,6 +85,7 @@ footer{
 }
 .flex{
     display:flex;
+    flex-wrap: wrap;
 }
 
 .home .hero, .login body{
@@ -106,6 +102,7 @@ footer{
     color:#fff;
     text-shadow: 0 0 10px rgba(20, 20, 20, 0.5);
     line-height: 6.4rem;
+    margin-top:40px;
 }
 .home .hero_signup{
     box-sizing: border-box;
@@ -175,11 +172,15 @@ footer{
 .login .login_form{
     align-self: center;
     max-width:300px;
-    max-height: 400px;
     flex:1;
     background:#fff;
     margin:40px;
     min-height:400px;
     padding:30px;
     box-shadow: 0 0 5px rgba(20, 20, 20, .3);
+}
+.login .login_error{
+    padding:16px;
+    background:rgba(255,0,0,.3);
+    margin:4px 0 20px;
 }
