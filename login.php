@@ -55,8 +55,80 @@ $header_title = "Anmelden - Initiative 4.0";
 ?>
 
 <!DOCTYPE html>
-<html class="login">
-<?php include('comp/header.php'); ?>
+<html lang="de">
+    <head>
+        <?php include('comp/header.php'); ?>
+        <style>
+            body{
+                background: url(assets/img/hero.jpg) no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+            }
+            .login_form h2{
+                font-size:1.5rem;
+                margin-bottom: 40px;
+            }
+            input{
+                box-sizing: border-box;
+                width:100%;
+                border:solid 1px #777;
+                transition: border-color 0.1s ease-in-out;
+                padding: 15px;
+                margin:12px 0 35px 0;
+                font-size: 1.1rem;
+            }
+            input:focus{
+                border-color:#ff1a00;
+                outline: none;
+            }
+            .register_call{
+                text-align: left;
+                color:#888;
+                flex:1;
+                font-size: 0.8rem;
+                align-self: center;
+            }
+            .login_submit_wrapper{
+                flex:1;
+                text-align: right;
+            }
+            .login_submit{
+                display:inline-block;
+                width:auto;
+                background:#ff1a00;
+                border-width: 0;
+                color:#fff;
+                font-weight: bold;
+                font-size: 1.1rem;
+                margin:0;
+                cursor: pointer;
+                transition: background-color 0.1s ease-in-out;
+
+            }
+            .login_submit:hover{
+                background: #df0000;
+            }
+            .login_form{
+                align-self: center;
+                max-width:300px;
+                flex:1;
+                background:#fff;
+                margin:40px;
+                min-height:400px;
+                padding:30px;
+                box-shadow: 0 0 5px rgba(20, 20, 20, .3);
+            }
+            .login_error{
+                padding:16px;
+                background:rgba(255,0,0,.3);
+                margin:0 0 20px;
+            }
+        </style>
+    </head>
     <body>
         <div class="login_form">
             <form action="./login.php" method="POST">
@@ -64,7 +136,7 @@ $header_title = "Anmelden - Initiative 4.0";
                 <?php if($error=="email_invalid"):?>
                     <div class="login_error">Email ungültig</div>
                 <?php elseif ($error == "password_invalid"):?>
-                    <div class="login_error">Password darf nicht leer sein</div>
+                    <div class="login_error">Passwort darf nicht leer sein</div>
                 <?php elseif ($error == "email_notfound"):?>
                     <div class="login_error">Email-Adresse konnte nicht gefunden werden</div>
                 <?php elseif ($error == "password_wrong"):?>

@@ -5,7 +5,6 @@ html, body{
     color:#333;
 }
 body{
-    line-height: 1.1rem;
     min-height: 100vh;
 }
 main{
@@ -86,101 +85,4 @@ footer{
 .flex{
     display:flex;
     flex-wrap: wrap;
-}
-
-.home .hero, .login body{
-    background: url(assets/img/hero.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-.home .hero_text{
-    align-self: center;
-    flex:2;
-    font-size: 4rem;
-    color:#fff;
-    text-shadow: 0 0 10px rgba(20, 20, 20, 0.5);
-    line-height: 6.4rem;
-    margin-top:40px;
-}
-.home .hero_signup{
-    box-sizing: border-box;
-    width:100%;
-    flex:1;
-    background:#fff;
-    margin:40px;
-    min-height:400px;
-    padding:30px;
-    box-shadow: 0 0 5px rgba(20, 20, 20, .3);
-}
-.home .hero_signup h2, .login .login_form h2{
-    font-size:1.5rem;
-    margin-bottom: 40px;
-}
-.home .hero input, .login input{
-    box-sizing: border-box;
-    width:100%;
-    border:solid 1px #777;
-    transition: border-color 0.1s ease-in-out;
-    padding: 15px;
-    margin:12px 0 35px 0;
-    font-size: 1.1rem;
-}
-.home .hero input:focus, .login input:focus{
-    border-color:#ff1a00;
-    outline: none;
-}
-.home .hero_login_call, .login .register_call{
-    text-align: left;
-    color:#888;
-    flex:1;
-    font-size: 0.8rem;
-    align-self: center;
-}
-.home .hero_submit_wrapper, .login .login_submit_wrapper{
-    flex:1;
-    text-align: right;
-}
-.home .hero .hero_submit, .login .login_submit{
-    display:inline-block;
-    width:auto;
-    background:#ff1a00;
-    border-width: 0;
-    color:#fff;
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin:0;
-    cursor: pointer;
-    transition: background-color 0.1s ease-in-out;
-
-}
-.home .hero .hero_submit:hover, .login .login_submit:hover{
-    background: #df0000;
-}
-
-.home .popular h1{
-    font-size:3rem;
-    margin:80px 0;
-}
-
-.login body{
-    display: flex;
-    justify-content: center;
-}
-
-.login .login_form{
-    align-self: center;
-    max-width:300px;
-    flex:1;
-    background:#fff;
-    margin:40px;
-    min-height:400px;
-    padding:30px;
-    box-shadow: 0 0 5px rgba(20, 20, 20, .3);
-}
-.login .login_error{
-    padding:16px;
-    background:rgba(255,0,0,.3);
-    margin:4px 0 20px;
 }
